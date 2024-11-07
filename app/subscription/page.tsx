@@ -1,6 +1,6 @@
-const Subscription = () => {
+const SubscriptionPage = () => {
     return <h1>Subscription</h1>;
   };
   
-  export default Subscription;
+  export default SubscriptionPage;
   
