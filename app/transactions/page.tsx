@@ -1,11 +1,22 @@
 import { db } from "../_lib/prisma";
-import { DataTable } from "../_components/ui/data-table";
 import { transactionsColumns } from "./_columns";
+import { redirect } from "next/navigation";
+import { auth } from "@clerk/nextjs/server";
 import AddTransactionButton from "../_components/add-transaction-button";
+import { DataTable } from "../_components/ui/data-table";
 import Navbar from "../_components/navbar";
 
 const TransactionPage = async () => {
-  const transactions = await db.transaction.findMany({});
+  const { userId } = await auth();
+  if (!userId) {
+    redirect("/login");
+  }
+
+  const transactions = await db.transaction.findMany({
+    where: {
+      userId,
+    },
+  });
   return (
     <>
       <Navbar />
@@ -20,5 +31,4 @@ const TransactionPage = async () => {
     </>
   );
 };
-
 export default TransactionPage;
