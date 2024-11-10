@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Finance AI
+Finance AI é um projeto fullstack em desenvolvimento, iniciado durante a 6º edição da Full Stack Week com o objetivo de aplicar e aprender técnicas avançadas de desenvolvimento web e machine learning para a construção de uma ferramenta de análise financeira.
 
-## Getting Started
+Descrição do Projeto
+Finance AI combina uma interface de usuário moderna e interativa com uma API robusta para processar dados financeiros, gerando insights para a tomada de decisões. Este projeto é voltado ao aprendizado e à experimentação com diferentes ferramentas e tecnologias do ecossistema fullstack.
 
-First, run the development server:
+Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Frontend:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js – Framework React para renderização do lado do servidor e geração de sites estáticos.
+Tailwind CSS – Framework CSS utilitário para estilização rápida e responsiva.
+Linguagens: JavaScript, TypeScript
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Backend:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Prisma – ORM para gerenciamento de banco de dados.
 
-## Learn More
+Banco de Dados:
 
-To learn more about Next.js, take a look at the following resources:
+PostgreSQL – Banco de dados relacional robusto e escalável.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Análise de Dados Financeiros em Tempo Real: Processamento e visualização de dados financeiros atualizados.
+Visualização de Gráficos e Tendências: Gráficos interativos para melhor entendimento das informações.
+Previsão de Resultados: Modelos de machine learning para prever tendências futuras com base em dados históricos.
+Customização de Perfis Financeiros: Permite que os usuários personalizem suas preferências e visualizações financeiras.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+⚠️ Observação: Este projeto está em fase de desenvolvimento e foi iniciado apenas com o intuito de aprender mais sobre as ferramentas, então algumas funcionalidades podem estar incompletas ou em aprimoramento.
 
-## Deploy on Vercel
+Estrutura do Projeto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O projeto será organizado de forma modular para facilitar o escalonamento e a manutenção. A estrutura segue o padrão MVC (Model-View-Controller), com rotas claras e camadas separadas para lógica de negócios e apresentação de dados.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+Finance AI/
+
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   └── public/
+├── prisma/
+│   └── schema.prisma
+├── docker/
+│   ├── Dockerfile
+│   └── docker-compose.yml
+├── .github/
+│   └── workflows/
+├── README.md
+└── package.json
+
+Objetivos
+O desenvolvimento de Finance AI foca no aprendizado e aprimoramento em:
+
+Desenvolvimento fullstack com Next.js e React
+Estilização avançada com Tailwind CSS
+Gerenciamento de banco de dados com Prisma e PostgreSQL
+Integração de machine learning
+Práticas de DevOps usando Docker e pipelines de CI/CD
+Próximos Passos
+Autenticação e Autorização de Usuários
+Expansão dos Modelos de Machine Learning
+Otimização de Performance
+Testes Automatizados
+Documentação Completa da API
